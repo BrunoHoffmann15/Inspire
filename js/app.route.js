@@ -5,7 +5,7 @@ app.config(function($routeProvider){
     controller: 'usuarioCtrl'
   })
   .when('/ideia', {
-    templateUrl: 'ideia/index.html',
+    templateUrl: 'templates/ideia.html',
     controller: 'ideiaCtrl'
   })
   .when('/feed', {
