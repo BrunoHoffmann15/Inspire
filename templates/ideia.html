@@ -1,3 +1,14 @@
-<div class="">
-
+<div>
+  <div ng-repeat="ideia in ideias">
+      {{ideia.titulo}}
+      <br>
+      {{ideia.descricao}}
+      <br>
+      <img ng-src="{{ideia.imagem}}" alt="">
+      <br>
+      <div ng-repeat="tag in ideia.tag">
+          {{tag.nome}}
+          <br>
+      </div>
+  </div>
 </div>

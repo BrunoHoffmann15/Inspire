@@ -1,1 +1,1 @@
-var app = angular.module("Ispire", []);
+var app = angular.module("Ispire", ['ngRoute']);
