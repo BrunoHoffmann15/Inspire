@@ -12,11 +12,15 @@ app.factory('usuarioService', function ($http) {
     function buscarPorId(usuario){
         return $http.get(urlBase + `/${usuario.id}`);
     }
+    function buscarPorLogin(usuario){
+        return $http.get(urlBase+`?email=${usuario.email}`);
+    }
     function listar(){
         return $http.get(urlBase);
     }
     return {
         criarUsuario : criarUsuario,
+        buscarPorLogin : buscarPorLogin,
         editarUsuario : editarUsuario,
         deletarUsuario : deletarUsuario,
         buscarPorId : buscarPorId,

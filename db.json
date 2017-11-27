@@ -33,7 +33,8 @@
             "apelido": "Bruno",
             "foto": "url",
             "email": "bruno.siqueira.hoffmann@gmail.com",
-            "descricao": "eu como batata"
+            "descricao": "eu como batata",
+            "senha": "12345"
         }
     ],
     "categoria":[

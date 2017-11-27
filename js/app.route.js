@@ -20,5 +20,9 @@ app.config(function($routeProvider){
     templateUrl: 'ideia/detail.html',
     controller: 'ideiaDetailCtrl'
   })
+  .when('/login', {
+    templateUrl: 'templates/login.html',
+    controller: 'loginCtrl'
+  })
   .otherwise('/feed');
 });
