@@ -1,11 +1,31 @@
 <div class="container">
+    login
     <div>
-        <form action="" ng-submit="logar()" ng-model="usuario">
-            <label for="email">Login: </label>
+        <form ng-submit="logar()" ng-model="usuario">
+            <label for="email">Email: </label>
             <input type="text" name="" id="login" ng-model="usuario.email">
             <label for="senha">Senha: </label>
             <input type="password" name="" id="senha" ng-model="usuario.senha">
             <input type="submit" value="Logar" class="btn btn-primary">
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    cadastro
+    <div>
+        <form ng-submit="cadastrar()" ng-model="usuarioCadastro" class="form-group">
+            <label for="apelido">Apelido</label>
+            <input type="text" id="apelido" ng-model="usuarioCadastro.apelido">
+            <label for="email">Email: </label>
+            <input type="text" id="email" ng-model="usuarioCadastro.email">
+            <label for="password">Senha: </label>
+            <input type="password" id="password" ng-model="usuarioCadastro.senha">
+            <label for="foto">Url Foto: </label>
+            <input type="text" id="foto" ng-model="usuarioCadastro.foto">
+            <label for="descricao"></label>
+            <textarea class="form-control" id="descricao" cols="30" rows="6" ng-model="usuarioCadastro.descricao"></textarea>
+            <input type="submit" value="Cadastrar">
         </form>
     </div>
 

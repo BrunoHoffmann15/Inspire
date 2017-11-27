@@ -9,7 +9,7 @@ app.config(function($routeProvider){
     controller: 'ideiaCtrl'
   })
   .when('/feed', {
-    templateUrl: 'ideia/feed.html',
+    templateUrl: 'templates/feed.html',
     controller: 'feedCtrl'
   })
   .when('/usuario-detail', {
@@ -24,5 +24,5 @@ app.config(function($routeProvider){
     templateUrl: 'templates/login.html',
     controller: 'loginCtrl'
   })
-  .otherwise('/feed');
+  .otherwise('/login');
 });
