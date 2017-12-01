@@ -1,3 +1,15 @@
 <div>
-    feed
+    <select class="form-control" name="orcamento.Modelo" ng-options="categoria.nome for categoria in categorias" ng-model="categoria" ng-change="filter(categoria)">
+    </select>
+    <div>
+        <div ng-repeat="ideia in ideias">
+            <div>
+                <div ng-repeat="t in ideia.tag">
+                    {{t.nome}}
+                </div>
+                <img ng-src="{{ideia.imagem}}">
+                {{ideia.descricao}}
+            </div>
+        </div>
+    </div>
 </div>
