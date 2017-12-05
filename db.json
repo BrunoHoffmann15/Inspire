@@ -12,30 +12,20 @@
       "id": 2,
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "imagem": "https://imagens.trocafone.com/images/phones/dt-58347a61-cinza-e-frente.png",
-<<<<<<< HEAD
       "tag": "#praia",
       "categoria": "Casa",
       "usuario": 2
-=======
-      "tag": [
-        {
-          "id": 1,
-          "nome": "#praia"
-        },
-        {
-          "id": 2,
-          "nome": "#agua"
-        }
-      ],
-      "categoria": {
-        "id": 1,
-        "nome": "Casa"
-      },
-      "usuario": {}
->>>>>>> f2a8b06017f30cc70878e2bd4610d5ed16ec674e
+
     }
   ],
-  "usuario": [
+      "categoria": [
+        {
+        "id": 1,
+        "nome": "Casa"
+        }
+  ],
+
+    "usuario": [
     {
       "id": 1,
       "apelido": "Bruno",
@@ -63,7 +53,6 @@
       "nome": "Viagem"
     },
     {
-<<<<<<< HEAD
       "id": 3,
       "nome": "Fotografia"
     },
@@ -78,15 +67,6 @@
     {
       "id": 6,
       "nome": "Bem-Estar"
-=======
-      "id": 1,
-      "nome": "#praia"
-    },
-    {
-      "id": 2,
-      "nome": "#agua"
->>>>>>> f2a8b06017f30cc70878e2bd4610d5ed16ec674e
     }
-
   ]
 }
