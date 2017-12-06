@@ -1,0 +1,12 @@
+<div class="list-not-friends">
+  <label for="filter">Pesquisar:</label>
+  <input type="text" name="filter" value="" ng-model="nome" class="search" placeholder="nome" id="filter">
+
+  <div class="form-group" ng-repeat="notFriend in notFriends | filter: {name: nome}" ng-model="friendship.idUserTwo" >
+    <div class="notfriend-card" ng-if="notFriend.id != usuarioLogado.id">
+      <label for="" value="" >{{notFriend.name}}</label>
+      <button type="button" name="button" ng-click="registrar(notFriend.id)">SOLICITAR</button>
+    </div>
+
+  </div>
+</div>

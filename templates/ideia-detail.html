@@ -1,0 +1,22 @@
+<div class="form-ideia">
+  <div class="form-group">
+    <label for="descricao">Descrição: </label>
+    <input type="text" name="descricao" id="descricao" ng-model="ideia.descricao">
+  </div>
+  <div class="form-group">
+    <label for="imagem">Url Imagem: </label>
+    <input type="text" name="imagem" id="imagem" ng-model="ideia.imagem">
+  </div>
+  <div class="form-group">
+    <label for="tag">Tag: </label>
+    <input type="text" name="tag" id="tag" ng-model="ideia.tag">
+  </div>
+  <div class="form-group">
+    <label for="categoria">Categoria: </label>
+    <select name="categoria" id="categoria" ng-repeat="categoria in categorias">
+      <option value="{{categoria.nome}}">{{categoria.nome}}</option>
+    </select>
+  </div>
+
+  <button type="button" name="button" ng-click="salvar()">Salvar</button>
+</div>

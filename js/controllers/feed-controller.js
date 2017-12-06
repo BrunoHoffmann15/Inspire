@@ -1,4 +1,5 @@
 app.controller('feedCtrl', function ($scope, loginService, $location, ideiaService, categoriaService) {
+
     if (loginService.usuarioLogado() == undefined) {
         $location.path("/login");
     } else {
@@ -18,6 +19,20 @@ app.controller('feedCtrl', function ($scope, loginService, $location, ideiaServi
             if(filtro.id !== 0){
                 $scope.ideias = $scope.ideias.filter(x => x.categoria.id == filtro.id);
             }
+        }
+        var ideia;
+      $scope.curtir = function(id) {
+          ideiaService.buscarPorId(id).then(function(r){
+            // ideia = r.data
+            ideia = r.data;
+            console.log(ideia.curtidas);
+            ideia.curtidas = ideia.curtidas + 1;
+            console.log(ideia.curtidas);
+            ideiaService.alterar(ideia);
+            // ideia.curtidas = ideia.curtidas + 1;
+            // ideiaService.alterar($scope.ideia);
+          });
+
         }
 
     }

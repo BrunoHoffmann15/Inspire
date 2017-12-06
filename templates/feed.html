@@ -1,15 +1,15 @@
 <div>
+  <input type="text" name="filter" placehorlder="#tag" ng-model="tag" value="">
     <select class="form-control" name="orcamento.Modelo" ng-options="categoria.nome for categoria in categorias" ng-model="categoria" ng-change="filter(categoria)">
     </select>
     <div>
-        <div ng-repeat="ideia in ideias">
+        <div ng-repeat="ideia in ideias | filter: {tag : tag}">
             <div>
-                <div ng-repeat="t in ideia.tag">
-                    {{t.nome}}
-                </div>
+                {{ideia.tag}}
                 <img ng-src="{{ideia.imagem}}">
                 {{ideia.descricao}}
             </div>
+            <button type="button" name="button" ng-click="curtir(ideia.id)">Curtir</button>{{ideia.curtidas}}
         </div>
     </div>
 </div>

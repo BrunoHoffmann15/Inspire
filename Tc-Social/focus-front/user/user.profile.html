@@ -1,0 +1,18 @@
+<div class="container user-container">
+  <div class="user-info">
+    <img src="{{usuarioLogado.profilePicture}}" alt="erro" class="user-img">
+
+    <ul>
+      <li><b>Nome:</b> {{usuarioLogado.name}}</li>
+      <li><b>Data de Nascimento:</b> {{usuarioLogado.birthDate}}</li>
+      <li><b>Email: </b> {{usuarioLogado.email}}</li>
+    </ul>
+  </div>
+
+  <div class="albuns">
+    <h3>Albuns: </h3>
+    <div class="card album-card" ng-repeat="album in albuns">
+      <a href="#!/album/{{album.id}}">{{album.name}}</a>
+    </div>
+  </div>
+</div>

@@ -6,7 +6,8 @@
       "imagem": "https://imagens.trocafone.com/images/phones/dt-58347a61-cinza-e-frente.png",
       "tag": "#praia",
       "categoria": "Viagem",
-      "usuario": 1
+      "usuario": 1,
+      "curtidas": 3
     },
     {
       "id": 2,
@@ -14,33 +15,8 @@
       "imagem": "https://imagens.trocafone.com/images/phones/dt-58347a61-cinza-e-frente.png",
       "tag": "#praia",
       "categoria": "Casa",
-      "usuario": 2
-
-    }
-  ],
-      "categoria": [
-        {
-        "id": 1,
-        "nome": "Casa"
-        }
-  ],
-
-    "usuario": [
-    {
-      "id": 1,
-      "apelido": "Bruno",
-      "foto": "url",
-      "email": "bruno.siqueira.hoffmann@gmail.com",
-      "descricao": "eu como batata",
-      "senha": "12345"
-    },
-    {
-      "apelido": "teste",
-      "email": "testando@email.com",
-      "senha": "1234",
-      "foto": "TESTE",
-      "descricao": "TESTANDO",
-      "id": 2
+      "usuario": 2,
+      "curtidas": 1
     }
   ],
   "categoria": [
@@ -67,6 +43,24 @@
     {
       "id": 6,
       "nome": "Bem-Estar"
+    }
+  ],
+  "usuario": [
+    {
+      "id": 1,
+      "apelido": "Bruno",
+      "foto": "url",
+      "email": "bruno.siqueira.hoffmann@gmail.com",
+      "descricao": "eu como batata",
+      "senha": "12345"
+    },
+    {
+      "apelido": "teste",
+      "email": "testando@email.com",
+      "senha": "1234",
+      "foto": "TESTE",
+      "descricao": "TESTANDO",
+      "id": 2
     }
   ]
 }

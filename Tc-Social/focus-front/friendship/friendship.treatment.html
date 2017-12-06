@@ -1,0 +1,9 @@
+<div class="friendship-list">
+  <div class="form-group" ng-repeat="user in users">
+    <div class="notfriend-card" ng-if="user.id != usuarioLogado.id">
+      <label for="">{{user.name}}</label>
+      <button type="button" name="button" ng-click="atualizar(user.id)">ACEITAR</button>
+    </div>
+
+  </div>
+</div>

@@ -1,10 +1,10 @@
 app.config(function($routeProvider){
   $routeProvider
   .when('/usuario', {
-    templateUrl: 'usuario/index.html',
+    templateUrl: 'templates/perfil.html',
     controller: 'usuarioCtrl'
   })
-  .when('/ideia', {
+  .when('/ideia/:id', {
     templateUrl: 'templates/ideia.html',
     controller: 'ideiaCtrl'
   })
@@ -13,11 +13,11 @@ app.config(function($routeProvider){
     controller: 'feedCtrl'
   })
   .when('/usuario-detail', {
-    templateUrl: 'usuario/detail.html',
+    templateUrl: 'templates/perfil-detail.html',
     controller: 'usuarioDetailCtrl'
   })
   .when('/ideia-detail', {
-    templateUrl: 'ideia/detail.html',
+    templateUrl: 'templates/ideia-detail.html',
     controller: 'ideiaDetailCtrl'
   })
   .when('/login', {
